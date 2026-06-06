@@ -6,29 +6,29 @@ colorTo: yellow
 sdk: static
 pinned: true
 license: apache-2.0
-short_description: The Ouroboros loop · 5 chakras · 45 kernels · live
+short_description: The Ouroboros loop · 5 surfaces · 45 kernels · live
 ---
 
 # 🪢 Mesh Cathedral
 
-One rotating 3D scene showing **all 5 SZL chakras** — `a11oy` · `amaru` · `sentra` · `rosie` · `killinchu` — as 3D character meshes in an **Ouroboros loop**, with each chakra's kernels glowing live and codex links accessible from any chakra.
+One rotating 3D scene showing **all 5 SZL capability surfaces** — `command` · `memory` · `policy` · `operator console` · `drones` — as 3D character meshes in an **Ouroboros loop**, with each surface's kernels glowing live and codex links accessible from any surface.
 
 **Live:** https://szlholdings-mesh-cathedral.static.hf.space/
 
 ## What you see
 
-- **5 chakras** as procedural 3D characters, each rotating at its own rate, lit by warm gold rim light:
-  - **rosie** — ethereal wireframe head
-  - **a11oy** — 16-node knotted Khipu cord
-  - **amaru** — serpent-coil neural mesh
-  - **sentra** — hexagonal shield with hex panels
-  - **killinchu** — kestrel + 53 drone dots over terrain
-- **Ouroboros ring** — a glowing gold torus threading all 5 chakras; **receipt particles** flow continuously along it, colour-coded by loop step (sign → gate → chain → memory → replay).
-- **Kernel orbits** — 7 universal kernel dots + 2 vertical kernel dots orbit each chakra (**45 kernels** total). Click a dot → docs + recent live activity.
-- **Center counter** — total signed receipts across the mesh, summed live from each flagship's metrics.
-- **Top HUD** — live status badges per chakra (green/amber/red, polled every 30s).
+- **5 surfaces** as procedural 3D characters, each rotating at its own rate, lit by warm gold rim light:
+  - **operator console** — ethereal wireframe head
+  - **command** — 16-node knotted Khipu cord
+  - **memory** — serpent-coil neural mesh
+  - **policy** — hexagonal shield with hex panels
+  - **drones** — kestrel + 53 drone dots over terrain
+- **Ouroboros ring** — a glowing gold torus threading all 5 surfaces; **receipt particles** flow continuously along it, colour-coded by loop step (sign → gate → chain → memory → replay).
+- **Kernel orbits** — 7 universal kernel dots + 2 vertical kernel dots orbit each surface (**45 kernels** total). Click a dot → docs + recent live activity.
+- **Center counter** — total signed receipts across the mesh, summed live from each surface's metrics.
+- **Top HUD** — live status badges per surface (green/amber/red, polled every 30s).
 - **Bottom HUD** — `Doctrine v11 LOCKED · 749 declarations · 14 unique axioms · 163 sorries · 13-axis yuyay_v3 · build SHA`.
-- **Codex** — click any chakra → side panel opens with that organ's recipes / theses / formulas. Top-right **All Codices** → unified search across all 5.
+- **Codex** — click any surface → side panel opens with that surface's recipes / theses / formulas. Top-right **All Codices** → unified search across all 5.
 
 ## The Ouroboros loop
 
@@ -42,9 +42,9 @@ The output (a signed, replayable receipt) becomes the input substrate for the ne
 
 ## The 45 kernels
 
-Each chakra = **7 universal kernels** (SIGN · GATE · CHAIN · MEMORY · REPLAY · MCP · WIRE) + **2 vertical kernels**. 9 × 5 = 45. Full spec: `docs/architecture/chakras.md` in the platform repo.
+Each surface = **7 universal kernels** (SIGN · GATE · CHAIN · MEMORY · REPLAY · MCP · WIRE) + **2 vertical kernels**. 9 × 5 = 45. Full spec: `docs/architecture/chakras.md` in the platform repo.
 
-> **"Chakra" is a brand/engineering metaphor** (Sanskrit "chakra" = wheel: a flagship modelled as a wheel of kernels). It carries **no mystical claim** of any kind — every kernel is a concrete software component.
+> **"Chakra" is a brand/engineering metaphor** (Sanskrit "chakra" = wheel: a capability surface modelled as a wheel of kernels). It carries **no mystical claim** of any kind — every kernel is a concrete software component.
 
 ## Tech
 
@@ -57,11 +57,11 @@ Each chakra = **7 universal kernels** (SIGN · GATE · CHAIN · MEMORY · REPLAY
 | File | Role |
 |------|------|
 | `index.html` | scene shell + HUD + codex panel |
-| `src/scene.js` | Three.js renderer + 5 procedural chakra meshes |
+| `src/scene.js` | Three.js renderer + 5 procedural surface meshes |
 | `src/ouroboros.js` | particle ring + loop logic + live receipt counter |
 | `src/kernels.js` | kernel orbits + click handlers + status badges |
-| `src/codex.js` | codex panel + cross-chakra unified search |
-| `src/config.js` | chakra / kernel / endpoint config |
+| `src/codex.js` | codex panel + cross-surface unified search |
+| `src/config.js` | surface / kernel / endpoint config |
 | `static/szl-mobile-controls.js` | canonical vanilla touch layer |
 
 ---
